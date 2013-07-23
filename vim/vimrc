@@ -45,8 +45,8 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
-" Command-T
-Bundle 'wincent/Command-T'
+" Unite
+Bundle 'Shougo/unite.vim'
 " Vundle bundles
 Bundle 'Syntastic' 
 " erik's colorscheme
@@ -65,7 +65,18 @@ endif
 " Setting up Vundle end
 
 
+"{{CommandT Settings
+"
+" Increase file buffer
+" let CommandTMaxFiles=20000
+
+"}}}
+
+
 "{{{Misc Settings
+
+" Set <Leader>t key
+nnoremap t :Unite -start-insert file<cr>
 
 " Line Numbers, turn off when using tmux with node
 " set number
