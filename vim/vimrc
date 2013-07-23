@@ -87,4 +87,10 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Cursor moves to different lines
+set whichwrap+=<,>,h,l,[,]
+
+" Unite settings
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+
 "}}}
