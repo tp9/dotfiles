@@ -5,8 +5,8 @@
 
 
 " For jsflakes
-filetype on
-filetype plugin on
+" filetype on
+" filetype plugin on
 
 
 " For pyflakes
@@ -99,5 +99,8 @@ function VerticalSplitBuffer(buffer)
     execute "vert belowright sb" a:buffer
 endfunction
 command -nargs=1 Vbuffer call VerticalSplitBuffer(<f-args>)
+
+" Escape from insert
+inoremap kj <ESC>
 
 "}}}
