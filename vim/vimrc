@@ -93,4 +93,11 @@ set whichwrap+=<,>,h,l,[,]
 " Unite settings
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 
+" Function to handle vertical buffer spliiitting
+" Usage: :Vbuffer 1
+function VerticalSplitBuffer(buffer)
+    execute "vert belowright sb" a:buffer
+endfunction
+command -nargs=1 Vbuffer call VerticalSplitBuffer(<f-args>)
+
 "}}}
