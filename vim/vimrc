@@ -54,6 +54,7 @@ Bundle 'altercation/vim-colors-solarized'
 " So awesome, it should be illegal
 Bundle 'https://github.com/tpope/vim-fugitive'
 " Oracle sqlPlus support, has prerequirements
+" Bundle 'https://github.com/tomtom/tlib_vim'
 " Bundle 'https://github.com/talek/vorax
 " Misc
 Bundle 'https://github.com/tpope/vim-sensible'
