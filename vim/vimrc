@@ -52,7 +52,9 @@ Bundle 'Syntastic'
 " erik's colorscheme
 Bundle 'altercation/vim-colors-solarized' 
 " So awesome, it should be illegal
-Bundle 'https://github.com/tpope/vim-fugitive' 
+Bundle 'https://github.com/tpope/vim-fugitive'
+" Oracle sqlPlus support, has prerequirements
+" Bundle 'https://github.com/talek/vorax
 " Misc
 Bundle 'https://github.com/tpope/vim-sensible'
 Bundle 'https://github.com/vim-scripts/closetag.vim'
