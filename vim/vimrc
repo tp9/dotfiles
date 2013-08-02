@@ -68,7 +68,7 @@ endif
 "}}}
 
 
-"{{CommandT Settings
+"{{{ CommandT Settings
 "
 " Increase file buffer
 " let CommandTMaxFiles=20000
@@ -76,10 +76,26 @@ endif
 "}}}
 
 
-"{{{Misc Settings
+"{{{ Vorax Settings
+"
+" Turn on pause
+" let g:vorax_output_window_pause=1
+
+"}}}
+
+
+"{{{ Unite Settings
+" 
+" Turn on fuzzy finder
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
 
 " Set <Leader>t key
 nnoremap t :Unite -start-insert file<cr>
+
+"}}}
+
+
+"{{{Misc Settings
 
 " Line Numbers, turn off when using tmux with node
 " set number
@@ -92,9 +108,6 @@ set expandtab
 
 " Cursor moves to different lines
 set whichwrap+=<,>,h,l,[,]
-
-" Unite settings
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
 
 " Function to handle vertical buffer spliiitting
 " Usage: :Vbuffer 1
