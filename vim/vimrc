@@ -81,6 +81,13 @@ endif
 " Turn on pause
 " let g:vorax_output_window_pause=1
 
+" Limit rows to 100
+let g:vorax_limit_rows=100
+
+" Remove repeating column headers
+let g:vorax_sqlplus_default_options=[
+  \ 'set pagesize 50000',]
+
 "}}}
 
 
