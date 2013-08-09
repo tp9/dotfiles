@@ -126,4 +126,10 @@ command -nargs=1 Vbuffer call VerticalSplitBuffer(<f-args>)
 " Escape from insert
 inoremap kj <ESC>
 
+" Turn off backups
+set nobackup
+set nowritebackup
+" Store backups in fixed directory
+" set backupdir=~/.vim/backup
+
 "}}}
