@@ -5,3 +5,6 @@ To install new plugins use:
 git submodule add git://github.com/kevinw/pyflakes-vim.git vim/bundle/pyflakes
 git submodule init && git submodule update
 ```
+symlinks
+============
+ln -s ~/dotfiles/vim/vimrc ~/.vimrc
